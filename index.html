@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EMEK - One Page One Product Focused Shop</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/minireset.css">
+	<link rel="stylesheet" type="text/css" href="css/emekstyle.css">
+	<link rel="stylesheet" type="text/css" href="assets/ZoomSlider/css/component.css" />
+	<script src="assets/ZoomSlider/js/modernizr.custom.js"></script>
+	<script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+</head>
+<body>
+	<a name="home"></a>
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-10">
+					<h1>EMEK</h1>
+					<nav id="menu">
+						<ul>
+							<li><a href="#home">HOME</a></li>
+							<li><a href="#about">ABOUT</a></li>
+							<li><a href="#products">PRODUCTS</a></li>
+							<li><a href="#price-list">PRICE LIST</a></li>
+							<li><a href="#contact">CONTACT</a></li>
+						</ul>
+					</nav>		
+				</div>
+				<div class="col-md-2">
+					<ul id="social">
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+						<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<section class="slider">
+				<div class="slide slide--current" data-content="content-1">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image" src="assets/ZoomSlider/images/iphone.png" alt="iPhone" />
+							<div class="preview">
+								<img src="assets/ZoomSlider/images/iphone-content-preview.png" alt="iPhone app preview" />
+								<div class="zoomer__area zoomer__area--size-2"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>The Classy</span> iPhone 6</h2>
+				</div>
+				<div class="slide" data-content="content-2">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image" src="assets/ZoomSlider/images/ipad.png" alt="iPad Mini" />
+							<div class="preview">
+								<img src="assets/ZoomSlider/images/ipad-content-preview.png" alt="iPad Mini app preview" />
+								<div class="zoomer__area zoomer__area--size-4"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>The Fantastic</span> iPad Mini</h2>
+				</div>
+				<div class="slide" data-content="content-3">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image" src="assets/ZoomSlider/images/macbook.png" alt="MacBook" />
+							<div class="preview">
+								<img src="assets/ZoomSlider/images/macbook-content-preview.jpg" alt="MacBook app preview" />
+								<div class="zoomer__area zoomer__area--size-3"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>The Amazing</span> MacBook</h2>
+				</div>
+				<div class="slide" data-content="content-4">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image" src="assets/ZoomSlider/images/imac.png" alt="iMac" />
+							<div class="preview">
+								<img src="assets/ZoomSlider/images/imac-content-preview.jpg" alt="iMac app preview" />
+								<div class="zoomer__area zoomer__area--size-5"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>The Glorious</span> iMac</h2>
+				</div>
+				<div class="slide" data-content="content-5">
+					<div class="slide__mover">
+						<div class="zoomer flex-center">
+							<img class="zoomer__image" src="assets/ZoomSlider/images/apple-watch.png" alt="Apple Watch" />
+							<div class="preview rounded">
+								<img src="assets/ZoomSlider/images/apple-watch-content-preview.png" alt="Apple Watch app preview" />
+								<div class="zoomer__area zoomer__area--size-1"></div>
+							</div>
+						</div>
+					</div>
+					<h2 class="slide__title"><span>The Fabulous</span> Apple Watch</h2>
+				</div>
+				<nav class="slider__nav">
+				<button class="button button--nav-prev"><i class="fas fa-angle-double-left"></i><span class="text-hidden">Previous product</span></button>
+				<button class="button button--zoom"><i class="fas fa-search"></i><span class="text-hidden">View details</span></button>
+				<button class="button button--nav-next"><i class="fas fa-angle-double-right"></i><span class="text-hidden">Next product</span></button>
+				</nav>
+			</section>
+			<section class="content">
+				<div class="content__item" id="content-1">
+					<img class="content__item-img rounded-right" src="assets/ZoomSlider/images/iphone-content.png" alt="Apple Watch Content" />
+					<div class="content__item-inner">
+						<h2>The iPhone 6</h2>
+						<h3>Incredible performance for powerful apps</h3>
+						<p>Built on 64-bit desktop-class architecture, the new A8 chip delivers more power, even while driving a larger display. The M8 motion coprocessor efficiently gathers data from advanced sensors and a new barometer. And with increased battery life, iPhone 6 lets you do more, for longer than ever.</p>
+						<p><a href="https://www.apple.com/iphone-6/technology/">Learn more about this technology &xrarr;</a></p>
+					</div>
+				</div>
+				<div class="content__item" id="content-2">
+					<img class="content__item-img rounded-right" src="assets/ZoomSlider/images/ipad-content.jpg" alt="iPad Mini Content" />
+					<div class="content__item-inner">
+						<h2>The iPad Mini</h2>
+						<h3>Desktop-class architecture without a desktop</h3>
+						<p>Don’t let its size fool you. iPad mini 3 is powered by an A7 chip with 64-bit desktop-class architecture. A7 delivers amazing processing power without sacriﬁcing battery life. So you get incredible performance in a device you can take with you wherever you go.</p>
+						<p><a href="https://www.apple.com/ipad-mini-3/performance/">Learn more about Performance &xrarr;</a></p>
+					</div>
+				</div>
+				<div class="content__item" id="content-3">
+					<img class="content__item-img rounded-right" src="assets/ZoomSlider/images/macbook-content.jpg" alt="MacBook Content" />
+					<div class="content__item-inner">
+						<h2>The MacBook</h2>
+						<h3>It's the future of the notebook</h3>
+						<p>With the new MacBook, we set out to do the impossible: engineer a full-size experience into the lightest and most compact Mac notebook ever. That meant reimagining every element to make it not only lighter and thinner but also better. The result is more than just a new notebook. It's the future of the notebook.</p>
+						<p><a href="https://www.apple.com/macbook/design/">Learn more about the design &xrarr;</a></p>
+					</div>
+				</div>
+				<div class="content__item" id="content-4">
+					<img class="content__item-img rounded-right" src="assets/ZoomSlider/images/imac-content.jpg" alt="iMac Content" />
+					<div class="content__item-inner">
+						<h2>The iMac</h2>
+						<h3>Engineered to the very last detail</h3>
+						<p>Every new Mac comes with Photos, iMovie, GarageBand, Pages, Numbers, and Keynote. So you can be creative with your photos, videos, music, documents, spreadsheets, and presentations right from the start. You also get great apps for email, surfing the web, sending texts, and making FaceTime calls — there’s even an app for finding new apps.</p>
+						<p><a href="https://www.apple.com/imac/built-in-apps/">Learn more about the iMac's features &xrarr;</a></p>
+					</div>
+				</div>
+				<div class="content__item" id="content-5">
+					<img class="content__item-img rounded-right" src="assets/ZoomSlider/images/apple-watch-content.png" alt="Apple Watch Content" />
+					<div class="content__item-inner">
+						<h2>The Apple Watch</h2>
+						<h3>Entirely new ways to stay in touch</h3>
+						<p>Apple Watch makes all the ways you're used to communicating more convenient. And because it sits right on your wrist, it can add a physical dimension to alerts and notifications. For example, you’ll feel a gentle tap with each incoming message. Apple Watch also lets you connect with your favorite people in fun, spontaneous ways — like sending a tap, a sketch, or even your heartbeat. </p>
+						<p><a href="https://www.apple.com/watch/new-ways-to-connect/">Learn more about new ways to connect &xrarr;</a></p>
+					</div>
+				</div>
+				<button class="button button--close"><i class="far fa-times-circle"></i><span class="text-hidden">Close content</span></button>
+			</section>
+		</div>
+		<a name="about"></a>
+		<section class="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h1>Welcome to the developer cloud</h1>
+						<p class="desc">
+							We make it simple to launch in the cloud and scale up as you grow—whether you’re running one virtual machine or ten thousand.
+						</p>
+					</div>
+					<div class="col-md-6">
+						<h2>Meet Emek Project</h2>
+						<p class="desc">We're on a mission to simplify cloud computing so developers and their teams can spend more time building software that changes the world.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<a name="products"></a>
+		<section class="products">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<figure>
+							<img src="assets/ZoomSlider/images/iphone.png" width="100%"/>
+							<div class="f_button">
+								<a href="#">Detail <i class="far fa-times-circle"></i></a>
+							</div>
+						</figure>
+						<h3>IPhone</h3>
+						<div class="p-detail">
+							Use the online image color picker right to select a color and get the html Color Code of this pixel. 
+							Also you get the HEX value, RGB value and HSV value.
+							You can put a picture url in the textbox below or upload your own image.
+						</div>
+					</div>
+					<div class="col-md-3">
+						<figure>
+							<img src="assets/ZoomSlider/images/imac.png" width="100%"/>
+							<div class="f_button">
+								<a href="#">Detail <i class="far fa-times-circle"></i></a>
+							</div>
+						</figure>
+						<h3>IMac</h3>
+						<div class="p-detail">
+							Use the online image color picker right to select a color and get the html Color Code of this pixel. 
+							Also you get the HEX value, RGB value and HSV value.
+							You can put a picture url in the textbox below or upload your own image.
+						</div>
+					</div>
+					<div class="col-md-3">
+						<figure>
+							<img src="assets/ZoomSlider/images/ipad.png" width="100%"/>
+							<div class="f_button">
+								<a href="#">Detail <i class="far fa-times-circle"></i></a>
+							</div>
+						</figure>
+						<h3>Ipad</h3>
+						<div class="p-detail">
+							Use the online image color picker right to select a color and get the html Color Code of this pixel. 
+							Also you get the HEX value, RGB value and HSV value.
+							You can put a picture url in the textbox below or upload your own image.
+						</div>
+					</div>
+					<div class="col-md-3">
+						<figure>
+							<img src="assets/ZoomSlider/images/macbook.png" width="100%"/>
+							<div class="f_button">
+								<a href="#">Detail <i class="far fa-times-circle"></i></a>
+							</div>
+						</figure>
+						<h3>MacBook</h3>
+						<div class="p-detail">
+							Use the online image color picker right to select a color and get the html Color Code of this pixel. 
+							Also you get the HEX value, RGB value and HSV value.
+							You can put a picture url in the textbox below or upload your own image.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<a name="price-list"></a>
+		<section class="price-list">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="price-heading">
+							Bronz
+						</div>
+						<div class="price-desc">
+							Uber spent $3.1 billion to dominate competition in the Middle East.<br> 
+
+							It announced Tuesday that it reached an agreement to buy Dubai-based Careem, which operates in 15 countries including Morocco, Pakistan, Egypt, Jordan, Pakistan, Saudi Arabia, and the United Arab Emirates.
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="price-heading">
+							Silver
+						</div>
+						<div class="price-desc">
+							The deal was for $1.4 billion in cash, $1.7 billion in loans — and marks the biggest tech industry deal in the region outside of Israel, according to the Associated Press. <br>
+
+							The company will operate with its two co-founders under Uber as its own brand — for now. On Careem's website, the company wrote, "We are still Careem."
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="price-heading">
+							Gold
+						</div>
+						<div class="price-desc">
+							Uber arrived in Careem's territory in late 2013, the year after Careem was founded. Now the two leading ride-hailing options are playing nice. <br>
+
+							Liad Itzhak, an SVP at Here Mobility, said in an email that the acquisition will kill local transit competition
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<a name="contact"></a>
+		<section class="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						
+					</div>
+					<div class="col-md-3">
+						
+					</div>
+					<div class="col-md-6">
+						<div id="map"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>EMEK</h1>
+					<p>Tübitak 4006 Computer & Science Project</p>
+					<h2>XLSX driven One Page Shop</h2>
+					<p>
+						<ul id="social">
+							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+							<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+						</ul>
+					</p>	
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="assets/ZoomSlider/js/classie.js"></script>
+	<script src="assets/ZoomSlider/js/dynamics.min.js"></script>
+	<script src="assets/ZoomSlider/js/main.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=13nefyOMonlEnzVKeK9tiMwmsLbE&callback=initMap"
+    async defer></script>
+</body>
+</html>
