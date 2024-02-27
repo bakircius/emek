@@ -5,6 +5,7 @@ This project fetches StackOverflow API get questions and make tag analysis
 # install
 
 pip install sosq
+
 pip install emek
 
 # for use
