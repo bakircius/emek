@@ -1,6 +1,6 @@
 [project]
 name = "emek"
-version = "1.0.0"
+version = "1.0.1"
 license = {file = "LICENSE"}
 authors = [
   { name="bakircius", email="burakbakirci@gmail.com" },
@@ -20,7 +20,7 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 [project.urls]
-Homepage = "https://github.com/bakircius/emek"
+Source = "https://github.com/bakircius/emek"
 Issues = "https://github.com/bakircius/emek/issues"
 Repository = "https://github.com/bakircius/emek.git"
 [tool.pytest.ini_options]
